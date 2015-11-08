@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="statusBarGreen" type="color">#558B2F</item>
+    <item name="green" type="color">#7CB342</item>
+    <item name="pressedGreen" type="color">#8BC34A</item>
+    <item name="bgGreen" type="color">#E8F5E9</item>
+    <item name="unselectedTabGray" type="color">#d6d6d6</item>
+    <item name="deepBlack" type="color">#212121</item>
+</resources>

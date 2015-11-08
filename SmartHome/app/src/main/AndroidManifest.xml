@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ro.hacktm.smarthome" >
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <meta-data android:name="clientid" android:value="b0ce0419f8f6a65e8a94690bfefb1c9b5128271c" />
+    <meta-data android:name="secret" android:value="6d67635d677d99fd9d52c09a4a891c9a7aded5ab" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".SmartHomeMain"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme" >
+        <provider
+            android:authorities="ro.hacktm.smarthome.provider"
+            android:name="com.onyxbeaconservice.provider.IBeaconProvider"
+            android:enabled="true"
+            android:exported="true"></provider>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="ro.hacktm.smarthome.ContentReceiver">
+            <intent-filter>
+                <action android:name="ro.hacktm.smarthome.content" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
