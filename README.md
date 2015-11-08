@@ -18,6 +18,3 @@ The set-up workflow is as follows:
   The decision list is sent to the controller unit;
 - The controller unit receives the decision list and starts to run the tasks (e.g. open a door, power up a light, reports the status)
 
-## Conclusion
-Use of this set-up will have a higher modularity level.
-
