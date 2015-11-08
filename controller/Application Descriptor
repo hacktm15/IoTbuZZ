@@ -1,0 +1,7 @@
+MIDlet-Version: 1.0.0
+MIDlet-Vendor: MIDlet Suite Vendor
+MIDlet-Jar-URL: HackTM2015_01.jar
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: Main,,Main
+MicroEdition-Profile: IMP-NG
+MIDlet-Name: HackTM2015_01 MIDlet Suite
